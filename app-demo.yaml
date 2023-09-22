@@ -7,7 +7,8 @@ spec:
   project: default
 
   source:
-    repoURL: https://github.com/wiktorvip/manifest-app-demo
+    repoURL: https://github.com/wiktorvip/app-demo-manifest
+    path: .
     targetRevision: HEAD
   destination: 
     server: https://kubernetes.default.svc
