@@ -1,18 +1,18 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: webapp-color
+  name: app-webcolor
   namespace: argocd
 spec:
   project: default
 
   source:
-    repoURL: https://github.com/wiktorvip/webapp-color-manifest
+    repoURL: https://github.com/wiktorvip/app-webcolor
     targetRevision: HEAD
-    path: .
+    path: manifest
   destination: 
     server: https://kubernetes.default.svc
-    namespace: webapp-color
+    namespace: app-webcolor
 
   syncPolicy:
     syncOptions:
