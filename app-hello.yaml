@@ -1,18 +1,18 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: app-demo
+  name: app-hello
   namespace: argocd
 spec:
   project: default
 
   source:
-    repoURL: https://github.com/wiktorvip/app-demo-manifest
+    repoURL: https://github.com/wiktorvip/app-hello
     path: .
     targetRevision: HEAD
   destination: 
     server: https://kubernetes.default.svc
-    namespace: app-demo
+    namespace: app-hello
 
   syncPolicy:
     syncOptions:
