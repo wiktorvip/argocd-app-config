@@ -9,7 +9,7 @@ spec:
   source:
     repoURL: https://github.com/wiktorvip/app-webcolor
     targetRevision: HEAD
-    path: manifest
+    path: manifests
   destination: 
     server: https://kubernetes.default.svc
     namespace: app-webcolor
