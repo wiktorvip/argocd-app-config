@@ -8,7 +8,7 @@ spec:
 
   source:
     repoURL: https://github.com/wiktorvip/app-hello
-    path: manifest
+    path: manifests
     targetRevision: HEAD
   destination: 
     server: https://kubernetes.default.svc
